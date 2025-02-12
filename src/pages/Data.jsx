@@ -69,15 +69,30 @@ export default function Data() {
             <h1>Welcome {username}</h1>
             <form onSubmit={handleTable}>
                 <div>
-                    <input type="number" placeholder="Subject 1" value={sub1} onChange={(e) => setSub1(e.target.value)} max="100" />
+                    <input type="number" placeholder="Subject 1" value={sub1} onChange={(e) => {
+                const value = Math.max(0, Math.min(100, e.target.value));
+                setSub1(value);
+            }} />
                     <br />
-                    <input type="number" placeholder="Subject 2" value={sub2} onChange={(e) => setSub2(e.target.value)} max="100"/>
+                    <input type="number" placeholder="Subject 2" value={sub2} onChange={(e) => {
+                const value = Math.max(0, Math.min(100, e.target.value));
+                setSub1(value);
+            }}/>
                     <br />
-                    <input type="number" placeholder="Subject 3" value={sub3} onChange={(e) => setSub3(e.target.value)}max="100" />
+                    <input type="number" placeholder="Subject 3" value={sub3} onChange={(e) => {
+                const value = Math.max(0, Math.min(100, e.target.value));
+                setSub1(value);
+            }}/>
                     <br />
-                    <input type="number" placeholder="Subject 4" value={sub4} onChange={(e) => setSub4(e.target.value)} max="100"/>
+                    <input type="number" placeholder="Subject 4" value={sub4} onChange={(e) => {
+                const value = Math.max(0, Math.min(100, e.target.value));
+                setSub1(value);
+            }}/>
                     <br />
-                    <input type="number" placeholder="Subject 5" value={sub5} onChange={(e) => setSub5(e.target.value)}max="100"/>
+                    <input type="number" placeholder="Subject 5" value={sub5} onChange={(e) => {
+                const value = Math.max(0, Math.min(100, e.target.value));
+                setSub1(value);
+            }}/>
                     <br />
                     <button type="submit">Submit</button>
                 </div>
