@@ -76,22 +76,22 @@ export default function Data() {
                     <br />
                     <input type="number" placeholder="Subject 2" value={sub2} onChange={(e) => {
                 const value = Math.max(0, Math.min(100, e.target.value));
-                setSub1(value);
+                setSub2(value);
             }}/>
                     <br />
                     <input type="number" placeholder="Subject 3" value={sub3} onChange={(e) => {
                 const value = Math.max(0, Math.min(100, e.target.value));
-                setSub1(value);
+                setSub3(value);
             }}/>
                     <br />
                     <input type="number" placeholder="Subject 4" value={sub4} onChange={(e) => {
                 const value = Math.max(0, Math.min(100, e.target.value));
-                setSub1(value);
+                setSub4(value);
             }}/>
                     <br />
                     <input type="number" placeholder="Subject 5" value={sub5} onChange={(e) => {
                 const value = Math.max(0, Math.min(100, e.target.value));
-                setSub1(value);
+                setSub5(value);
             }}/>
                     <br />
                     <button type="submit">Submit</button>
