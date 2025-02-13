@@ -6,7 +6,7 @@ export default function Home(){
     const navigate = useNavigate(); 
     const handlelogin=(e)=>{
         e.preventDefault();
-        if(username==="ashwin"&&password==="admin"){
+        if(username==="admin"&&password==="admin"){
             navigate("/Data");
         }
         else{
